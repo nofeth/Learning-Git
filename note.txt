@@ -1,0 +1,74 @@
+VERSION CONTROL ADA 3 MACAM
+
+LOCAL VERSION CONTROL
++ hanya berjalan di local komputer
++ digunakan karena sederhana dan tidak butuh server
++ setiap perubahan pada file hanya di simpan di komputer
+- jika komputer rusak maka seluruh datanya hilang
+- agak sulit berkolaborasi dengan pengguna lain
+
+CENTRALIZED VERSION CONTROL
++ menyimpan seluruh data revisi di server
++ orang lain bisa mengakses data ke server untuk melihat file
+- jika pengguna offline,mereka tidak bisa melakukan perubahan dan melihat revisi file
+
+DISTRIBUTED VERSION CONTROL
+alternatif lain dari CENTRALIZED VERSION CONTROL
++ client tidak hanya mengambil file v ersi terakhir,namun seluruh riwayat revisi di copy seluruhnya
++ nah hal ini juga jika tidak terkoneksi maka kita masih tetap bisa bekerja,memanipulasi file,sampai melihat riwayat perubahan
++ sserver lebih dari satu,karena tiap server isinya sama, full backup data
+
+salah satu DVCs adalah git
+
+git tidak membutuhkan server dikarenakan semua riwayat project akan selalu di duplikasi
+artinya git juga local versioon control
+setiap perubahan yang terjadi di git akan selalu dibuat signature(tanda)nya menggunakan algoritma hashing sha-1.
+semua hal yang terjadi di git secara otomatis akan dicatat,hal
+ini menjadikan perubahan apapun di git,pasti selalu bisa dikembalikan ke versi sebelumnya
+GIT CONFIGURATION
+setiap perubahan di dalam project git itu nanti akan disisipkan username sama email
+agar ketahuan siapa yang melakukan perubahan 
+git config --global user.name/email "namanya"`
+default editor
+git config --global core.editor "code --wait"
+
+REPOSITORY
+merupakan sebutan project di GIT
+folder kosong atau sudah berisi lalu membuatnya sebagai git repository
+atau bisa menggunakan clone git pada server git
+
+MEMBUAT REPOSITORY
+membuat repository cukup dengan perintah git init
+di dalam folder yang sudah kita jadikan repository
+terdapat folder baru dengan nama .git
+.git merupakan database GIT
+
+THE THREE STATES
+Git memiliki tiga state terdapat file kita
+
+MODIFIED
+mengubah (CUD pada file), namun belum disimpan secara permanen ke repository
+STAGED
+kita menandai modifikasi yang kita lakukan terhadap file akan disimpan secara permanen ke repository
+COMMITTED
+data sudah disimpan di repository
+FLOW
+ada 5 file kita kasih 3 file ditandai agar disimpan secara permanen maka kita lakukan STAGED lalu kita lakukan COMMITTED
+otomatis 3 file yang kita masukkan ke STAGED itu akan masuk ke mode COMMITTED
+
+THREE SECTION
+3 state sebelumnya di dalam git dilakukan di section yang berbeda beda
+WORKING DIRECTORY
+saat kita melakukan file dilakukan di WORKING DIRECTORY
+ketika kita menandai file yang siap di commit ini akan pindah ke section STAGING AREA
+STAGING AREA
+merupakan section dimana file sudah disiapkan untuk disimpan secara permanen
+STAGING AREA semua informasi perubahan file akan disimpan
+ketika kita melakukan commit maka akan pindah ke REPOSITORY
+REPOSITORY
+tempat dimana semua file dan database riwayat versi file disimpan
+
+DIAGRAM THREE TREE
+
+WORKING > GIT ADD > STAGING -> GIT COMMIT -> REPOSITORY
+adasadasd dimana
