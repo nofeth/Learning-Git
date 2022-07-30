@@ -98,4 +98,7 @@ git commit
 
 git diff untuk melihat perubahan pada file
 
+git add .
+untuk memindahkan semuanya
+
 
