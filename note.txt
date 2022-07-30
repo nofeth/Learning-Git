@@ -94,4 +94,4 @@ merupakan pointer menuju hash yang paling akhir
 karena kadang sangat menyulitkan jika harus menuliskan hash value,jika kita akan menuju ke hash paling baru,kita bisa gunakan kata head
 jadi head itu agar kita tidak menulis hash langsung menuju ke akhir hash atau perubahan yang terbaru
 
-git commit m 
+git commit
