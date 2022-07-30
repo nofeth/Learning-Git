@@ -95,3 +95,5 @@ karena kadang sangat menyulitkan jika harus menuliskan hash value,jika kita akan
 jadi head itu agar kita tidak menulis hash langsung menuju ke akhir hash atau perubahan yang terbaru
 
 git commit
+
+git diff untuk melihat perubahan pada file
