@@ -72,3 +72,4 @@ DIAGRAM THREE TREE
 
 WORKING > GIT ADD > STAGING -> GIT COMMIT -> REPOSITORY
 adasadasd dimana
+dimana kita heheheheh
