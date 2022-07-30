@@ -100,5 +100,8 @@ git diff untuk melihat perubahan pada file
 
 git add .
 untuk memindahkan semuanya
+ ketika menghapus file tetap gunakan git add nama_file/folder lalu git commit
 
-
+ MEMBATALKAN PERUBAHAN
+jika kita menambah file di working directory,lalu misal kita ingin membatalkan perubahannya
+kita hanya perlu menghapus file tersebut atau bisa menggunakan git clean -f
