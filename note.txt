@@ -71,5 +71,27 @@ tempat dimana semua file dan database riwayat versi file disimpan
 DIAGRAM THREE TREE
 
 WORKING > GIT ADD > STAGING -> GIT COMMIT -> REPOSITORY
-adasadasd dimana
-dimana kita heheheheh
+
+SNAPSHOT 
+kumpulan dari perubahan yang kita kumpulkan.perubahan yang terjadi akan direkam dan kita sebut namanya snpashot
+snpashot berisikan semua perubahan di semua file yang kita commit
+setiap snapshot menghasilkan hash 
+
+HASH
+setiap snapshot yang kita lakukan,semua akan menghasilkan hash sebagai identitas snapshotnya
+hash merupakan checksum untuk menghitung perubahan yang terjadi
+HASH dibutuhkan untuk menjaga data integrity
+sehingga tiap snapshot  yang sudah kita laukan tidak bisa diubah
+
+PERHITUNGAN HASH
+perhitungan hash dilakukan tidak hanya dari perubahan file
+namun juga dari parent, author dan message
+artinya perubahan yang terjadi pada snapshot sebelumnya.maka akan menimbulkan efek berantai,karena semua hash selanjutnya akan berubah
+oleh karena itu,hal tersebut tidak bisa dilakukan di GIT 
+
+HEAD
+merupakan pointer menuju hash yang paling akhir
+karena kadang sangat menyulitkan jika harus menuliskan hash value,jika kita akan menuju ke hash paling baru,kita bisa gunakan kata head
+jadi head itu agar kita tidak menulis hash langsung menuju ke akhir hash atau perubahan yang terbaru
+
+
