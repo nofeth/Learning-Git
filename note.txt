@@ -97,3 +97,5 @@ jadi head itu agar kita tidak menulis hash langsung menuju ke akhir hash atau pe
 git commit
 
 git diff untuk melihat perubahan pada file
+
+
