@@ -185,4 +185,10 @@ REWRITE RIWAYAT COMMIT
 jika kita melakukan reset,namun kita belum membuat commit baru
 kita masih bisa kembali maju lagi ke commit yang paling baru
 namun jika kita membuat commit baru,secara otomatis commit lama akan ditimpa commit baru
-git reset <hashnya>
+git reset <optional --mixed --hard> <hashnya>
+
+AMEND COMMIT
+kadang saat sudah melakukan commit,mungkin ada beberapa hal yang terlupakan
+biasanya menggunakan reset soft ke commit sebelumnya lalu tambahkan perubahan > commit ulang
+ada hal lain yang bisa dilakukan,menggunakan git commit --ammend
+perlu diingat,amend akan mengubah hash commit karena data perubahan yang di cmmit bertambah
