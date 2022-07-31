@@ -160,8 +160,9 @@ jika kita ingin menggunakan vscode untuk melihat perbedaan antar commit,kita bis
 daripada melihat perubahan pada commit1 dan commit 2 di cli kita bisa gunakan difftool ini untuk melihat perubahannnya
 git difftool hash1 hash2
 
-RENAME FILEID
-
+RENAME FILE
 git bisa mendeteksi rename file
 sebenarnya rename file merupakan operasi gabungan antara hapus file,lalu menambah file baru dengan isi yang  sama
 namun git bisa otomatis mendeteksi jika terjadi perubahan nama file,karena isi file sebagian besar masih sama
+ketika kita cek menggunakan git status saat file sudah di rename maka prosesnya adalah file tersebut di delete lalu buat baru
+kondisi ini masih di dalam working directory
