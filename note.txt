@@ -105,6 +105,42 @@ untuk memindahkan semuanya
  ketika menghapus file yang ada di repository tetap gunakan git add nama_file/folder yang sudah dihapus lalu git commit
  menghapus file yang ada di working tree
 
-MEMBATALKAN PERUBAHAN
+MEMBATALKAN PERUBAHAN (MASIH DI WORKING DIRECTORY)
 jika kita menambah file di working directory,lalu misal kita ingin membatalkan perubahannya
 kita hanya perlu menghapus file tersebut atau bisa menggunakan git clean -f
+
+MEMBATALKAN PERUBAHAN FILE (MASIH DI WORKING DIRECTORY)
+jika kita ingin membatalkan perubahan file,kita bisa menggunakan
+git restore nama_file
+
+MEMBATALKAN PENGHAPUSAN FILE 
+(FILE YANG DI RESTORE ADALAH FILE DALAM KONDISI DI STAGING AREA / REPOSITORY? YANG MANA TERAKHIR KALI DI STAGE)
+sama seperti membatalkan perubahan file bisa gunakan 
+git restore nama_file
+
+MEMBATALKAN DARI STAGING INDEX
+perintah git store hanya bisa dilakukan untuk membatalkan perubahan yang terjadi di working directory
+artinya ketika file terlanjur kita masukkan ke staging index maka untuk membatalkannya tidak bisa kita lakukan secara langusng 
+dari staging index
+kita perlu mengembalikan posisi dari staging index ke working directory terlebih dahulu
+git restore --staged namafile
+
+MEMBATALKAN YANG SUDAH DI COMMIT?
+tidak ada cara yang bisa kita lakukan jika perubahan sudah terlanjur di commit
+yang bisa kita lakukan adalah dua cara
+rollback commit atau revert commit
+
+COMMIT LOG
+walaupun repository kita di local komputer kita
+semua riwayat perubahan disimpan di komputer kita
+kekurangannya menjadi makin lama repository akan semakin besar ukurannya 
+namun keuntungannya kita bisa liat semua perubahannnya
+git log
+
+LOG SEDERHANA
+kadang kita hanya ingin melihat commit log pesannya saja atau sederhananya saja
+lakukan git log --oneline
+
+GRAPH 
+saat nanti kita sudah belajar tentangg git branching,kadang kita ingin melihat commit log dengan hubungannya dengan  commit log sebelumnya
+perintah : git log --oneline --graph 
