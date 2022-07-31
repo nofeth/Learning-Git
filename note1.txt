@@ -166,3 +166,5 @@ sebenarnya rename file merupakan operasi gabungan antara hapus file,lalu menamba
 namun git bisa otomatis mendeteksi jika terjadi perubahan nama file,karena isi file sebagian besar masih sama
 ketika kita cek menggunakan git status saat file sudah di rename maka prosesnya adalah file tersebut di delete lalu buat baru
 kondisi ini masih di dalam working directory
+namun ketika di staging index kita lakukan git add untuk file yang terhapus lalu git add lagi untuk file yang baru / yang baru saja rename
+maka saat kita git status akan muncul pesan renamed berbeda dengan saat di working directory
