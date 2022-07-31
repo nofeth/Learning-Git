@@ -188,7 +188,7 @@ namun jika kita membuat commit baru,secara otomatis commit lama akan ditimpa com
 git reset <optional --mixed --hard> <hashnya>
 
 AMEND COMMIT
-kadang saat sudah melakukan commit,mungkin ada beberapa hal yang terlupakan
+kadang saat sudah melakukan commit,mungkin ada beberapa hal yang terlupakan kita bisa lakukan git ulang dengan commit yang sebelumnya
 biasanya menggunakan reset soft ke commit sebelumnya lalu tambahkan perubahan > commit ulang
-ada hal lain yang bisa dilakukan,menggunakan git commit --ammend
+ada hal lain yang bisa dilakukan,menggunakan git commit --amend
 perlu diingat,amend akan mengubah hash commit karena data perubahan yang di cmmit bertambah
