@@ -168,3 +168,21 @@ ketika kita cek menggunakan git status saat file sudah di rename maka prosesnya 
 kondisi ini masih di dalam working directory
 namun ketika di staging index kita lakukan git add untuk file yang terhapus lalu git add lagi untuk file yang baru / yang baru saja rename
 maka saat kita git status akan muncul pesan renamed berbeda dengan saat di working directory
+
+RESET COMMIT
+reset commit merupakan mekanisme dimana kita menggeser HEAD ke posisi commit yang kita mau,artinya commit selanjutnya akan dilakukan 
+pada posisi HEAD baru 
+contoh :
+ketika kita mempunyai 3 commit ini artinya head commitnya berada di posisi ke 3 lalu kita geser HEADNYA ke commit 1 
+maka head selanjutnya akan diisi dengan commit 1,jadi commit 3 otomatis di hilangkan/direplace begitu juga commit 1 
+git reset <mode> nama_hash
+<mode>
+--soft memindahkan head pointer, namun tidak melakukan perubahan apapun di staging index dan working directory
+--mixed memindahkan head pointer, mengubah staging index menjadi sama seperti dengan repository,namun tidak mengubah apapun di working directory
+--hard memindahkan head pointer, mengubah staging index dan working directory sehingga sama dengan repository
+
+REWRITE RIWAYAT COMMIT
+jika kita melakukan reset,namun kita belum membuat commit baru
+kita masih bisa kembali maju lagi ke commit yang paling baru
+namun jika kita membuat commit baru,secara otomatis commit lama akan ditimpa commit baru
+git reset <hashnya>
