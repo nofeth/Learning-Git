@@ -153,3 +153,15 @@ MEMBANDINGKAN COMMIT
 git mempunyai fitur membandingkan commit dengan commit lainnya
 membandingkan disini adalah membandingkan snapshot hasil commit bukan perubahan yang terjadi antara commit
 git diff hash1 hash2
+
+DIFFTOOL
+sebelumnya kita sudah melakukan perngaturan menggunakan vs code untuk melihat diff
+jika kita ingin menggunakan vscode untuk melihat perbedaan antar commit,kita bisa gunakan
+daripada melihat perubahan pada commit1 dan commit 2 di cli kita bisa gunakan difftool ini untuk melihat perubahannnya
+git difftool hash1 hash2
+
+RENAME FILEID
+
+git bisa mendeteksi rename file
+sebenarnya rename file merupakan operasi gabungan antara hapus file,lalu menambah file baru dengan isi yang  sama
+namun git bisa otomatis mendeteksi jika terjadi perubahan nama file,karena isi file sebagian besar masih sama
