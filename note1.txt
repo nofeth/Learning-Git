@@ -192,3 +192,48 @@ kadang saat sudah melakukan commit,mungkin ada beberapa hal yang terlupakan kita
 biasanya menggunakan reset soft ke commit sebelumnya lalu tambahkan perubahan > commit ulang
 ada hal lain yang bisa dilakukan,menggunakan git commit --amend
 perlu diingat,amend akan mengubah hash commit karena data perubahan yang di cmmit bertambah
+
+VERSI SEBELUMNYA 
+kadang kita sering mengalami masalah dengan file yang suda kita commit ke repository
+git memiliki fitur dimana kita bisa melihat versi file pada commit sebelumnya
+saat kita ambil versi file sebelumnya,file pada commit tersebut akan berada di staging index
+untuk melakukannya kita bisa gunakan perintah
+git checkout hash -- namafile
+
+SNAPSOT SEBELUMNYA
+kita bisa melihat snapshot sebelumnya
+kita bisa tentukan kemana tujuan snapshot kita hanya dengan menggunakan hash commit
+git checkout hash
+jika ingin kembali ke paling awal branch
+git checkout namabranch 
+
+untuk melihat branch saat ini
+git branch --show-current
+
+REVERT COMMIT
+untuk membatalkan commit yang sudah kita lakukan dengan cara membuat commit baru yang membatalkan commit sebelumnya
+git revert nama_hash
+jadi revert ini lebih aman daripada reset kalo reset semua yang setelah commit tersebut akan hilang
+sedangkan revert cmn commit itu yang dibalikkan jadi tidak setelah commit itu
+
+IGNORE
+kadang saat membuat aplikasi tidak semua file kita ingin track ke dalam git
+caranya kita bisa tambahkan file .gitgnore di repository
+lalu di dalamnya kita tambahkan tiap baris di file .gitignore berisikan file / folder yang kita hiraukan
+
+ignore folder 
+/log
+ignore file dengan extension
+./html
+ignore
+ignore.txt
+
+BLAME
+saat membuat kod program kdang kita ingin tahu,siapa yang menambahkan baris kode program tersebut
+blame ini digunakan untuk mencari tahu siapa yang menambah perubahan pada file dan juga untuk mengetahui commitnya
+git blame namafile
+
+ALIAS
+dengan alias kita bisa menambah nama perintah lain untuk perintah yang sudah ada di git
+jadi kayak nama yang kita buat sendiri bisa memanggil perintah di git
+untuk mempersingkat saja contoh : co dari commit
