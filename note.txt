@@ -144,3 +144,12 @@ lakukan git log --oneline
 GRAPH 
 saat nanti kita sudah belajar tentangg git branching,kadang kita ingin melihat commit log dengan hubungannya dengan  commit log sebelumnya
 perintah : git log --oneline --graph 
+
+MELIHAT DETAIL COMMIT
+ketika kita ingin melihat detail perubahan yang terjadi pada sebuah commit
+git show nama_hashnya
+
+MEMBANDINGKAN COMMIT
+git mempunyai fitur membandingkan commit dengan commit lainnya
+membandingkan disini adalah membandingkan snapshot hasil commit bukan perubahan yang terjadi antara commit
+git diff hash1 hash2
