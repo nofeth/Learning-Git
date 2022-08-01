@@ -1,1 +1,33 @@
 BRANCHING
+branching artinya kita membuat timeline baru yang berbeda dari timeline utama
+timeline utama => master atau main
+daripada kita menambah fitur ke branch utama lebih baik kita buat branch baru dengan fitur tersebut
+
+HOTFIX => PERBAIKAN SECEPATNYA
+
+ketika ada bug saat aplikasinya sudah di run 
+bisa gunakan branch 
+buat branch baru setelah di perbaiki kita merge ke main/master branch
+
+PINDAH KE BRANCH LAIN
+untuk pindah ke branch lain
+git switch nama_branch
+atau 
+git checkout nama_branch
+
+MENGUBAH NAMA BRANCH
+pertama kita pindah terlebih dahulu ke branch yang kita ingin ubah
+lalu jalankan perintah 
+git branch -m nama_branch_baru
+
+MENGAHPUS BRANCH
+kalo kebanyakan branch nanti juga pusing mtnya
+untuk menghapus branch kita perlu keluar terlebih dahulu dari branch tersebut
+lalu gunakan perintah
+git branch -d nama_branch
+git branch --delete nama_branch
+
+MULTIPLE BRANCH
+branch biasanya dibuat banyak sekali
+git mendukung multiple branch git bisa mengananganinya dengan baik
+ 
