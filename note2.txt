@@ -30,4 +30,6 @@ git branch --delete nama_branch
 MULTIPLE BRANCH
 branch biasanya dibuat banyak sekali
 git mendukung multiple branch git bisa mengananganinya dengan baik
+
+MEMBATALKAN CONFLICT
  
