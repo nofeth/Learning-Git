@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 feature 2
+=======
+FEATURE Bbbb
+>>>>>>> feature/a

@@ -50,6 +50,7 @@ biasanya tiap programmer akan membuat branch masing2
 dan tidak bisa dihindari,kadang programmer akan melakukan perubahan pada kode file yang sama di branch yang berbeda
 dan biasanya ketika melakukan merge,akan terjadi yang namanya conflict
 hal ini disebabkan,satu file diubah di branch yang berbeda,sehingga ketika di merge,kita perlu melakukan yang namanya merge conflict
+<<<<<<< HEAD
 
 MEMBATALKAN CONFLICT 
 jika terjadi conflict kita wajib memperbaiki terlebih dahulu 
@@ -63,3 +64,5 @@ MEMPERBAIKI CONFLICT
 saat terjadi conflict tidak ada cara otomatis memperbaikinya
 kita perbaiki secara manual
 dan jika perbaikan conflict sudah dilakukan, maka kita perlu melakukan commit perubahan tersebut
+=======
+>>>>>>> feature/a
