@@ -58,3 +58,8 @@ sedangkan perubahan yang konflik akan secara otomatis berada di working director
 jika kita ingin membatalkan merge gunakan perintah
 git merge --abort
 secara otomatis semua perubahan di branch yang ingin kita merge akan dihapus
+
+MEMPERBAIKI CONFLICT
+saat terjadi conflict tidak ada cara otomatis memperbaikinya
+kita perbaiki secara manual
+dan jika perbaikan conflict sudah dilakukan, maka kita perlu melakukan commit perubahan tersebut
