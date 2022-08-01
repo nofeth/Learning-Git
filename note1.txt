@@ -237,3 +237,4 @@ ALIAS
 dengan alias kita bisa menambah nama perintah lain untuk perintah yang sudah ada di git
 jadi kayak nama yang kita buat sendiri bisa memanggil perintah di git
 untuk mempersingkat saja contoh : co dari commit
+git config --global alias.co commi\
