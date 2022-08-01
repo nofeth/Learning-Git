@@ -45,7 +45,7 @@ ketika di merge juga akan membuat commit baru
 
 
 MERGE CONFLICT
-dalama pembuatan aplikasi,biasanya setiap programmer aakan melakukan penambahan kode program di repository secara parallel
+dalama pembuatan aplikasi,biasanya setiap programmer akan melakukan penambahan kode program di repository secara parallel
 biasanya tiap programmer akan membuat branch masing2
 dan tidak bisa dihindari,kadang programmer akan melakukan perubahan pada kode file yang sama di branch yang berbeda
 dan biasanya ketika melakukan merge,akan terjadi yang namanya conflict
@@ -64,5 +64,18 @@ MEMPERBAIKI CONFLICT
 saat terjadi conflict tidak ada cara otomatis memperbaikinya
 kita perbaiki secara manual
 dan jika perbaikan conflict sudah dilakukan, maka kita perlu melakukan commit perubahan tersebut
-=======
->>>>>>> feature/a
+
+CHERRY PICK 
+kadang ada kasus, ketika kita membuat kode program di sebuah branch kita ingin melakukan merge, namun tidak ingin
+melakukan merge semua branchnya, mungkin hanya sebagian commit saja
+cherry pick fitur yang digunakan untuk mengambil commit dari branch manapun dan kita merge ke dalam branch saat ini
+
+CHERRY PICK 
+kadang ada kasus, ketika kita membuat kode program di sebuah branch kita ingin melakukan merge, namun tidak ingin
+melakukan merge semua branchnya, mungkin hanya sebagian commit saja
+cherry pick fitur yang digunakan untuk mengambil commit dari branch manapun dan kita merge ke dalam branch saat ini 
+
+kita ingin melakukan merge branch feature/c, namun kita tidak ingin merge semua perubahan
+misal saja kita hanya ingin melakukan merge perubahan di file1.txt
+maka kita bisa melakukan cherry pick untuk perubahan tersebut,
+git cherry-pick commitIdnya
