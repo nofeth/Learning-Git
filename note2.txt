@@ -30,4 +30,23 @@ git branch --delete nama_branch
 MULTIPLE BRANCH
 branch biasanya dibuat banyak sekali
 git mendukung multiple branch git bisa mengananganinya dengan baik
- 
+
+ketika kita commit di branch yang lain maka yang terjadi 
+setiap branch memiliki commitnya tersendiri
+
+MERGE 
+merge adalah proses dimana kita melakukan penggabungan dua branch
+merge biasanya dilakukan setelah kita selesai membuat kode program di sebuah branch,dan ingin menggabungkan fitur tersebut ke branch lain,misal branch utama
+ketika dua branch dimerge bukan berarti dijadikan satu branch tetapi lebih ke perubahan mana akan ditarik ke perubahan mana 
+
+untuk melakukan merge kita perlu pindah ke branch dimana merge akan dilakukan
+lalu gunakan perintah : git merge nama_branch
+ketika di merge juga akan membuat commit baru
+
+
+MERGE CONFLICT
+dalama pembuatan aplikasi,biasanya setiap programmer aakan melakukan penambahan kode program di repository secara parallel
+biasanya tiap programmer akan membuat branch masing2
+dan tidak bisa dihindari,kadang programmer akan melakukan perubahan pada kode file yang sama di branch yang berbeda
+dan biasanya ketika melakukan merge,akan terjadi yang namanya conflict
+hal ini disebabkan,satu file diubah di branch yang berbeda,sehingga ketika di merge,kita perlu melakukan yang namanya merge conflict
