@@ -79,3 +79,67 @@ kita ingin melakukan merge branch feature/c, namun kita tidak ingin merge semua 
 misal saja kita hanya ingin melakukan merge perubahan di file1.txt
 maka kita bisa melakukan cherry pick untuk perubahan tersebut,
 git cherry-pick commitIdnya
+
+SSH (SECURE SHELL)
+SSH merupakan protokol jaringan untuk komunikasi jaringan yang aman dan ternkripsi
+SSH merupakan aplikasi berbasis termanil
+
+GIT SSH
+git sendir memiliki beberapa mekanisme untuk berkomunikasi dengan git server. seperti http dan ssh
+hal ini karena SSH merupakan protokol yang direkomendasikan ketika berkomunikasi dengan git server
+salah satu keuntungan SSH tidak perlu memasukkan usernam dan password setiap mengirim dan juga mengambil data
+
+SSH KEY 
+hal pertama ketika yang perlu kita lakukan menggunakan SSH adalah membuat key 
+SSH key merupakan kunci yang digunakan untuk autentikasi ke SSH server 
+untuk membuatnya kita bisa gunakan perintah ssh-keygen di termnial
+secara otomatis akan terdapat 2 key di local kita yaitu private key dan public key
+kita bisa melihatnya di dalam folder .ssh di home directory kita
+file id_rsa adalah private key dan id_rsa.pub adalah public key
+
+TEST SSH KE GITHUB
+gunakan perintah ssh -T git@github.com
+
+REMOTE REPOSITORY
+ketika kita membuat git project,git tidak tahu tentangg remote repository
+kita perlu memberi tahu ke git project yang sudah kita bua tentang lokasi git repository
+menambahkan git repository
+git remote add nama_remote ssh-url
+salah satu kebiasaan di git,biasanya memberi nama untuk remote repository dengan nama origin
+
+MELIHAT REMOTE REPOSITORY
+kita bisa gunakan perintah git remote
+untuk melihat url detail remote repositorynya 
+bisa gunakan perintah git remote get-url nama_remotenya
+
+MENGHAPUS REMOTE REPOSITORY
+git remote rm nama_repositorynya
+
+PUSH
+walaupun kita sudah menyimpan perubahannya di local tapi tidak secara otomatis akan di sync dengan remote repository
+hal ini karena sejak awal git di desain sebagai distributed verson control,artinya kita bisa melakukan perubahan dimanapun dan kapanpun yang terjadi
+di git project di local kita,kita perlu mengirimnya secara manual ke git server
+untuk mengirim perubahan di local ke git server gunakan perintah
+push
+
+PUSH BRANCH
+untuk emngirim perubahan branch ke remote repository dengan namaa branch yang sama
+git push nama_remote localbranch contoh nama localbranch master atau main
+untuk mengirim perubahan branch ke remote repository dengan nama branch yang berbeda kita gunakan perintah
+git push namaremote localbranch:remotebranch
+
+PUSH SEMUA BRANCH
+git push origin --all
+
+MENGHAPUS BRANCH
+perintah push juga bisa digunakan untuk menghapus branch yang ada di remote repository
+git push --delete nama_remote nama_branch
+perlu diingat menghapus remote branch bukan berarti menghapus branch di local,jadi kita harus menghapus secara manual
+hapus di localnya lalu hapus di remotenya
+
+MELKUKAN CLONE
+gunakan perintah
+git clone urlnya
+ketika melakukan clone nama project akan sama dengan nama project yang ada di repository
+untuk menentukan nama tersendiri saat melakukan clone gunakan perintah :
+git clone url_ssh/http nama_folder
