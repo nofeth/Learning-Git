@@ -16,7 +16,7 @@ DISTRIBUTED VERSION CONTROL
 alternatif lain dari CENTRALIZED VERSION CONTROL
 + client tidak hanya mengambil file v ersi terakhir,namun seluruh riwayat revisi di copy seluruhnya
 + nah hal ini juga jika tidak terkoneksi maka kita masih tetap bisa bekerja,memanipulasi file,sampai melihat riwayat perubahan
-+ sserver lebih dari satu,karena tiap server isinya sama, full backup data
++ server lebih dari satu,karena tiap server isinya sama, full backup data
 
 salah satu DVCs adalah git
 
@@ -73,7 +73,7 @@ DIAGRAM THREE TREE
 WORKING > GIT ADD > STAGING -> GIT COMMIT -> REPOSITORY
 
 SNAPSHOT 
-kumpulan dari perubahan yang kita kumpulkan.perubahan yang terjadi akan direkam dan kita sebut namanya snpashot
+kumpulan dari perubahan yang kita kumpulkan.perubahan yang terjadi akan direkam dan kita sebut namanya snapshot
 snpashot berisikan semua perubahan di semua file yang kita commit
 setiap snapshot menghasilkan hash 
 
@@ -81,7 +81,7 @@ HASH
 setiap snapshot yang kita lakukan,semua akan menghasilkan hash sebagai identitas snapshotnya
 hash merupakan checksum untuk menghitung perubahan yang terjadi
 HASH dibutuhkan untuk menjaga data integrity
-sehingga tiap snapshot  yang sudah kita laukan tidak bisa diubah
+sehingga tiap snapshot  yang sudah kita lakukan tidak bisa diubah
 
 PERHITUNGAN HASH
 perhitungan hash dilakukan tidak hanya dari perubahan file
@@ -101,9 +101,9 @@ git diff untuk melihat perubahan pada file
 git add .
 untuk memindahkan semuanya
 
- (khusus file yang ada di repository)
- ketika menghapus file yang ada di repository tetap gunakan git add nama_file/folder yang sudah dihapus lalu git commit
- menghapus file yang ada di working tree
+(khusus file yang ada di repository)
+ketika menghapus file yang ada di repository tetap gunakan git add nama_file/folder yang sudah dihapus lalu git commit
+menghapus file yang ada di working tree
 
 MEMBATALKAN PERUBAHAN (MASIH DI WORKING DIRECTORY)
 jika kita menambah file di working directory,lalu misal kita ingin membatalkan perubahannya
@@ -194,7 +194,7 @@ ada hal lain yang bisa dilakukan,menggunakan git commit --amend
 perlu diingat,amend akan mengubah hash commit karena data perubahan yang di cmmit bertambah
 
 VERSI SEBELUMNYA 
-kadang kita sering mengalami masalah dengan file yang suda kita commit ke repository
+kadang kita sering mengalami masalah dengan file yang sudah kita commit ke repository
 git memiliki fitur dimana kita bisa melihat versi file pada commit sebelumnya
 saat kita ambil versi file sebelumnya,file pada commit tersebut akan berada di staging index
 untuk melakukannya kita bisa gunakan perintah
@@ -237,4 +237,4 @@ ALIAS
 dengan alias kita bisa menambah nama perintah lain untuk perintah yang sudah ada di git
 jadi kayak nama yang kita buat sendiri bisa memanggil perintah di git
 untuk mempersingkat saja contoh : co dari commit
-git config --global alias.co commi\
+git config --global alias.co commit
